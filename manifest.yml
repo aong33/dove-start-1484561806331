@@ -1,0 +1,12 @@
+applications:
+- path: .
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: dove start
+  host: dove-start
+  disk_quota: 1024M
+  services:
+  - dove start-AdvancedMobileAccess
+  - dove start-imfpush
+  - dove start-cloudantNoSQLDB
